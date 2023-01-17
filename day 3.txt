@@ -1,0 +1,17 @@
+Problem statement : 
+there is a fish in a tank ,Everytime it move’s forward the fish move’s by 1 meter and fish jumps out of water after every 5 meters it move’s forward and tank size will be provided by user
+Note : the fish moves from one end to other end in a tank
+	write a function 
+-> that checks no of times fish jumped out of water in a tank 
+-> minimum tank size must be 5 meters (throw a error if tank size is less than 5 meters)
+-> tank size must be provided by user(take input from user)
+	Example :
+		Assume if tank size is 23 meters then fish jumps 4 times out of water
+Ans 
+def checkjumps():
+    n = int(input("Enter the tank size : "))
+    return n//5
+checkjumps()
+	Input : Enter the tank size : 200004
+	Output : 40000
+	
