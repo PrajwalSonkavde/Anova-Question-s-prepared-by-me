@@ -1,0 +1,14 @@
+Write a program that takes two String input's i.e "str1" , "str2" and returns the letters of str2 that are not in the str1
+
+Example : 
+	Assume if two strings given by user are
+		-> str1 = "hello"
+		-> str2 = "world"
+		-> result = "wrd"
+solution 
+
+def find():
+    str1=set(input("Enter the first string : ").casefold())
+    str2=set(input("Enter the second string : ").casefold())
+    letternot = str2.difference(str1)
+    print("Letters of str2 that are not in the str1",set(letternot))
