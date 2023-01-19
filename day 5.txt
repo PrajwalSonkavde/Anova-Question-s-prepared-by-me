@@ -1,0 +1,11 @@
+write a program
+	-> reverse a given string
+	-> remove all numeric , special type symbols
+	-> return resultant string in list
+note : use slicing and list Comprehension if your using python programming language 
+
+solution : 
+	str1 = "helFlo1SD2+@#"
+	str1 = str1[::-1]
+	res = [i for i in str1 if (i>='a' and i<='z') or (i>='A' and i<='Z')]
+	print(res)
