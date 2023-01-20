@@ -1,0 +1,15 @@
+Perform the task :
+-> create a DataFrame using pandas
+-> DataFrame should consist of 3 columns named 'a' , 'b' , 'c' 
+-> 'a' should have value 3,4,54,3 | 'b' should have 'd',3,3,9 | 'c' should have 6.7,1,7,'v'
+-> After creating DataFrame , remove obersvation's containing alphabets
+
+Solution :
+
+import pandas as pd
+dict = {'a': [3,4,54,3],'b': ['d',3,3,9] ,'c': [6.7,1,7,'v']}
+df =pd.DataFrame(dict)
+print (df.dtypes)
+df['b'] = df['b'].apply(str)
+df['c'] = df['c'].apply(str)
+df.loc[df['b'].str.isnumeric() & df['c'].str.isnumeric()]
