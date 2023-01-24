@@ -1,0 +1,9 @@
+write a fuction that return's number of days student was absent in a week
+
+note : 
+	-> get input from user considering all days are working day in a week
+	-> use string inbuild function
+example :
+	1 : present , 0 : absent
+	assume if given input is [1,0,1,1,0,1,0]
+	number of days student was absent is 3
